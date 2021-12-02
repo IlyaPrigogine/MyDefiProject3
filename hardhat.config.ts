@@ -45,7 +45,13 @@ const config: HardhatUserConfig = {
             url: secret.url_kovan,
             accounts: [secret.key],
             timeout: 120000
-        }
+        },
+        ropsten: {
+            url: secret.url_ropsten,
+            accounts: [secret.key],
+            timeout: 120000,
+            gas: "auto"
+        },
     },
     etherscan: {
         apiKey: secret.apiKey
