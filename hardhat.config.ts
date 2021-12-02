@@ -50,7 +50,8 @@ const config: HardhatUserConfig = {
             url: secret.url_ropsten,
             accounts: [secret.key],
             timeout: 120000,
-            gas: "auto"
+            gas: 2100000,
+            gasPrice: 8000000000
         },
     },
     etherscan: {
