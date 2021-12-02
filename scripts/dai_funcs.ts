@@ -7,9 +7,8 @@ async function main() {
 
     const {owner} = await getNamedAccounts();
 
-    const Greeter = await ethers.getContract<Greeter>('Greeter');
-    console.log(`Greeter.greet(): ${await Greeter.greet()}`);
-    
+
+
 }
 
 
